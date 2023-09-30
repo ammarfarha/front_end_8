@@ -1,27 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <form action="#">
+    <form 
+    action="" 
+    method="post" 
+     
+    autocomplete="off" 
+    enctype="multipart/form-data">
         <fieldset>
             <legend>User Informations: </legend>
+            <div>
+                <label for="username">User name:</label>
+                <input 
+                    type="text" 
+                    name="username" 
+                    id="username" 
+                    placeholder="Enter User Name"
+                    required readonly disabled>
+            </div>
+            <div>
+                <label for="pass">Password: </label>
+                <input type="password" name="password" id="pass">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Informations:</legend>
+            gender: <br>
+            <div>
+                <input type="radio" name="gender" id="female" value="f">
+                <label for="female">أنثى</label>
+                <br>
+                <input type="radio" name="gender" id="male" value="m" checked>
+                <label for="male">ذكر</label>
+            </div>
+            <div>
+                <input type="checkbox" name="social" id="sol">
+                <label for="mil">متزوج؟</label>
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <select name="city" id="city">
+                    <optgroup label="الجنوبية">
+                        <option value="daraa">درعا</option>
+                        <option value="swidaa">السويداء</option>
+                        <option value="damascus" selected>دمشق</option>
+                        <option value="damascus round">ريف دمشق</option>
+                        <option value="qunaitra">القنيطرة</option>
+                    </optgroup>
+                    <optgroup label="الوسطى">
+                        <option value="homs">حمص</option>
+                        <option value="hama">حماه</option>
+                    </optgroup>
+                    <optgroup label="الشمالية">
+                        <option value="allepo">حلب</option>
+                        <option value="edlib">أدلب</option>
+                    </optgroup>
+                    <optgroup label="الساحلية">
+                        <option value="lataquia">اللاذقية</option>
+                        <option value="tartous">طرطوس</option>
+                    </optgroup>
+                    <optgroup label="الجزيرة">
+                        <option value="derAlzoor">دير الزور</option>
+                        <option value="raqa">الرقة</option>
+                        <option value="hasaka">الحسكة</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Other Informations: </legend>
+            <div>
+                <label for="age">Your Age: </label>
+                <input type="number" name="age" id="age" min="5" max="20" step="3">
+            </div>
+            <div>
+                <label for="score">your score: </label>
+                <input type="range" name="score" id="score" min="5" max="10" step="2">
+            </div>
+            <div>
+                <label for="birth">Your birth date: </label>
+                <input type="date" name="birth" id="birth" min="2023-08-01" max="2023-10-01">
+            </div>
+            <div>
+                <input type="datetime-local" name="" id="">
+                <input type="month" name="" id="">
+                <input type="week" name="" id="">
+            </div>
+            <label for="favcolor">Fav Color: </label>
+            <input type="color" name="favcolor" id="favcolor">
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+                <input type="url" name="site" id="site"> <br>
+                <label for="phone">phone: </label>
+                <input type="tel" name="phone" id="phone" pattern="09[3,4,5,6,8,9]{1}[0-9]{7}">
+            </div>
+            <div>
+                <input type="hidden" name="key" value="1122521742">
+            </div>
+            <div>
+                <label for="attachement">Files: </label>
+                <input type="file" name="attachement" id="attachement" multiple accept="video/*">
+            </div>
+            <textarea name="mdg" id="" cols="30" rows="10"></textarea>
+
+        </fieldset>
+
+
         <div>
-            <label for="u1">user name: </label>
-            <input type="text" name="user" id="u1" value="Ahmad">
+            <input type="submit" value="Send">
+            <input type="reset" value="Cancel">
         </div>
-        <div>
-            <label for="p1">Password</label>
-            <input type="password" name="pass" id="p1">
-        </div>
-    </fieldset>
-        <br>
-        <input type="submit" value="Send">
-        <input type="reset" value="cancel">
-</form>
+    </form>
 
 </body>
+
 </html>
