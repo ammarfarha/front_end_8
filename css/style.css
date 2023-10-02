@@ -1,0 +1,26 @@
+/* div{
+    border: 1px solid black;
+    font-size: large;
+}
+h1{
+    background-color: brown ;
+} */
+#h1{
+    background-color: red;
+}
+.h1{
+    background-color: gray;
+    font-weight: bolder;
+}
+.h2{
+    background-color: aquamarine;
+    color: azure;
+}
+h1{
+    background-color: blue !important;
+    color: white;
+}
+
+.text-bg-primary {
+    color: chartreuse !important;
+}
