@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia&effect=fire");
+/* body{
+    margin: 0;
+} */
+#div11{
+    width: 50%;
+    height: 300px;
+    background-color: aquamarine;
+    /*background-image: url("/images/Logo/ss.png");
+    background-image: url("/images/cars/04.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+    /* background: gray url("/images/cars/01.png") repeat top right; */
+    /* border-top-color: brown;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-bottom: 4px dashed red; */
+    border: 1px solid red;
+    /* border-bottom-color: blue;
+    border-right-style: dashed; */
+    /* border-radius: 10px; */
+    /* border-top-left-radius: 50px; */
+    /* min-width: 200px; */
+    /* padding-top: 15px;
+    padding-left: 25px; */
+    padding: 0px;
+    margin: 0px;
+    /* outline: 50px solid gray; */
+}
+
+#div21{
+    width: 50%;
+    height: 300px;
+    border: 5px solid red;
+    /* max-width: 300px; */
+}
+/* @media screen and (max-width: 600px){
+    #div1{
+        display: none;
+    }
+} */
+
+div1{
+    /* Text: */
+    color: crimson;
+    text-align: justify;
+    text-decoration: underline solid;
+    direction: ltr;
+    /* Fonts: */
+    /* font-size: x-large;
+    font-weight: bolder;
+    font-style: italic; */
+    font-family: "Trirong", sans-serif;
+}
+
+
+div{
+    width: 50%;
+    border: 1px solid black;
+}
+#div1{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    
+    background-color: aquamarine;
+}
+#div2{
+    
+}
+#main{
+    position: relative;
+}
