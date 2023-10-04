@@ -4,127 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Forms</title>
+    <title>Forms</title>
     <style>
         div {
-            margin: 10px;
+            width: 80%;
+            padding-bottom: 15px;
+            ;
         }
     </style>
 </head>
 
 <body>
-    <form 
-    action="" 
-    method="post" 
-     
-    autocomplete="off" 
-    enctype="multipart/form-data">
+    <h1>Forms</h1>
+    <!-- <form   action="#"
+            method="post"
+            autocomplete="on"
+            novalidate
+            enctype="multipart/form-data"
+            target="_blank"
+        > -->
+    <form action="#" method="post" autocomplete="on">
         <fieldset>
-            <legend>User Informations: </legend>
+            <legend>User Informations:</legend>
             <div>
-                <label for="username">User name:</label>
-                <input 
-                    type="text" 
-                    name="username" 
-                    id="username" 
-                    placeholder="Enter User Name"
-                    required readonly disabled>
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="us">
             </div>
             <div>
-                <label for="pass">Password: </label>
-                <input type="password" name="password" id="pass">
+                <label for="password">Password: </label>
+                <input type="password" name="ps" id="password">
+            </div>
+            <div>
+                <label for="sammary">Summary: </label>
+                <textarea name="sammary" id="sammary" cols="30" rows="10"></textarea>
             </div>
         </fieldset>
         <fieldset>
-            <legend>Personal Informations:</legend>
-            gender: <br>
+            <legend>Choise Options:</legend>
             <div>
-                <input type="radio" name="gender" id="female" value="f">
-                <label for="female">أنثى</label>
+                fav drinks: <br>
+                <input type="checkbox" name="tea" id="tea" checked>
+                <label for="tea">Tea</label>
+            </div>
+            <div>
+               Gender: <br>
+               <input type="radio" name="gender" id="female" value="f" checked>
+               <label for="female">أنثى</label>
                 <br>
-                <input type="radio" name="gender" id="male" value="m" checked>
-                <label for="male">ذكر</label>
+               <input type="radio" name="gender" id="male" value="m">
+               <label for="male">ذكر</label>
             </div>
             <div>
-                <input type="checkbox" name="social" id="sol">
-                <label for="mil">متزوج؟</label>
-            </div>
-            <div>
-                <label for="city">City:</label>
-                <select name="city" id="city">
-                    <optgroup label="الجنوبية">
+                <label for="city">City: </label>
+                <select name="city" id="city" multiple>
+                    <optgroup label="جنوبية">
+                        <option value="dam">دمشق</option>
                         <option value="daraa">درعا</option>
-                        <option value="swidaa">السويداء</option>
-                        <option value="damascus" selected>دمشق</option>
-                        <option value="damascus round">ريف دمشق</option>
-                        <option value="qunaitra">القنيطرة</option>
+                        <option value="Swaidaa">السويداء</option>
                     </optgroup>
-                    <optgroup label="الوسطى">
-                        <option value="homs">حمص</option>
-                        <option value="hama">حماه</option>
-                    </optgroup>
-                    <optgroup label="الشمالية">
-                        <option value="allepo">حلب</option>
-                        <option value="edlib">أدلب</option>
-                    </optgroup>
-                    <optgroup label="الساحلية">
-                        <option value="lataquia">اللاذقية</option>
-                        <option value="tartous">طرطوس</option>
-                    </optgroup>
-                    <optgroup label="الجزيرة">
-                        <option value="derAlzoor">دير الزور</option>
-                        <option value="raqa">الرقة</option>
-                        <option value="hasaka">الحسكة</option>
-                    </optgroup>
+                    <option value="alp">حلب</option>
+                    <optgroup label="وسطى">
+                    <option value="homs">حمص</option>
+                    <option value="hama">حماه</option>
+                </optgroup>
+                    <option value="tartous">طرطوس</option>
+                    <option value="latakia">اللاذقية</option>
                 </select>
             </div>
         </fieldset>
         <fieldset>
-            <legend>Other Informations: </legend>
+            <legend>Extra Fiels: </legend>
             <div>
-                <label for="age">Your Age: </label>
-                <input type="number" name="age" id="age" min="5" max="20" step="3">
-            </div>
-            <div>
-                <label for="score">your score: </label>
-                <input type="range" name="score" id="score" min="5" max="10" step="2">
-            </div>
-            <div>
-                <label for="birth">Your birth date: </label>
-                <input type="date" name="birth" id="birth" min="2023-08-01" max="2023-10-01">
-            </div>
-            <div>
-                <input type="datetime-local" name="" id="">
-                <input type="month" name="" id="">
-                <input type="week" name="" id="">
-            </div>
-            <label for="favcolor">Fav Color: </label>
-            <input type="color" name="favcolor" id="favcolor">
-            <div>
-                <label for="email">Email: </label>
+                <label for="email">user email: </label>
                 <input type="email" name="email" id="email">
-                <input type="url" name="site" id="site"> <br>
-                <label for="phone">phone: </label>
-                <input type="tel" name="phone" id="phone" pattern="09[3,4,5,6,8,9]{1}[0-9]{7}">
             </div>
             <div>
-                <input type="hidden" name="key" value="1122521742">
+                <label for="url">Web Site: </label>
+                <input type="url" name="url" id="url">
             </div>
             <div>
-                <label for="attachement">Files: </label>
-                <input type="file" name="attachement" id="attachement" multiple accept="video/*">
+                <label for="favcolor">Fav Color: </label>
+                <input type="color" name="favcolor" id="favcolor" value="#12AF95">
             </div>
-            <textarea name="mdg" id="" cols="30" rows="10"></textarea>
+            <div>
+                <label for="year">Year: </label>
+                <input type="number" name="year" id="year" min="2000" max="2010" step="2">
+            </div>
+            <div>
+                <label for="tel">tel: </label>
+                <input type="tel" name="tel" id="tel" pattern="[+,00]{,1}9639[0-9]{8}">
+            </div>
+
+            <input type="text" list="browsers" name="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Cpera">
+                <option value="Safari">
+            </datalist>
 
         </fieldset>
+        <fieldset>
+            <legend>date and time: </legend>
+            <div>
+                <label for="bdate">Birth Date:</label>
+                <input type="date" name="bdate" id="bdtae" max="2000-01-01" min="1980-10-02">
+                <input type="datetime-local" name="d1" id="d1">
+                <input type="time" name="" id="">
+                <input type="month" name="" id="">
+                <input type="week" name="" id="">                
+            </div>            
+        </fieldset>
+        <fieldset>
+            <legend>File inputs: </legend>
+            <div>
+                <label for="sfile">Single File:</label>
+                <input type="file" name="sfile" id="sfile">
+            </div>
+            <div>
+                <label for="mfile">Multible File:</label>
+                <input type="file" name="mfile" id="mfile" multiple>
+            </div>
 
+            <div>
+                <label for="vfile">Vedio file:</label>
+                <input type="file" id="vfile" name="vfile" accept="video/*">
+            </div>
+            <div>
+                <label for="imfile">images file:</label>
+                <input type="file" id="imfile" name="imfile" accept="image/*">
+            </div>
+        </fieldset>
 
-        <div>
-            <input type="submit" value="Send">
-            <input type="reset" value="Cancel">
-        </div>
-    </form>
-
+        <input type="submit" value="Send">
+        <input type="reset" value="cancel">
+    </form>    
 </body>
 
 </html>
