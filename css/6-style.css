@@ -1,0 +1,87 @@
+/* h1, h2{
+    font-size: x-large;
+    color: red;
+}
+.cl1, .cl2{
+    background-color: aquamarine;
+}
+div.cl1{
+    width: 50%;
+} */
+/* .cl3{
+    border: 1px solid black;
+}
+.cl3 ~ h1{
+    background-color: blue;
+    color: white;
+} */
+/* #id1:hover{
+    background-color: red;
+}
+input:focus{
+    background-color: black;
+    color: white;
+}
+input:disabled{
+    background-color: green;
+    border: 1px solid blue;
+}
+a:link{
+    color: green;
+    text-decoration: none;
+}
+a:visited{
+    color: violet;
+}
+.item + .menu{
+    display: none;
+}
+.item:hover + .menu{
+    display: inline-block;
+} */
+
+
+
+/* .menu{
+    list-style-type: none;
+}
+.menu li::marker{
+    color: red;
+    font-size: xx-large;
+}
+.menu li::before{ */
+    /* content: url("/images/Logo/ss.png"); */
+    /* content: "- ";
+}
+.menu li::after{
+    content: ";";
+    color: red;
+}
+#txt{
+    border: 2px solid black;
+}
+#txt::first-line{
+    color: red;
+}
+div::first-letter{
+    color: blue;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+div::selection{
+    background-color: blanchedalmond;
+    color: brown;
+} */
+
+[title*="dea"]{
+    background-color: aqua;
+}
+[type^="te"]{
+    background-color: blue;
+}
+[type$="l"]{
+    background-color: yellow;
+}
+[lang|="en"]{
+    background-color: brown;
+}
