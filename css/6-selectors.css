@@ -1,0 +1,54 @@
+/* 
+Simple selectors:
+    - id 
+    - class
+    - name
+*/
+/* 
+Combinators:
+    - , OR
+    - connected (no spaces).
+    - space (selector in selector direct child or not).
+    - >     (selector in selector only direct child).
+    - +     (selector directly after another selector).
+    - ~     (selector directly or not after another selector). 
+*/
+/* 
+Pseudo-classes: (special state of an element) (:)
+    - active:           the active link
+    - checked:	        every checked <input> element
+    - disabled:	        every disabled <input> element
+    - empty:	        every <selector> element that has no children
+    - enabled:	        every enabled <input> element
+    - first-child:	    every <selector> elements that is the first child of its parent
+    - focus:	        the <input> element that has focus
+    - hover:	        links on mouse over
+    - invalid:	        all <input> elements with an invalid value
+    - last-child:	    every <selector> elements that is the last child of its parent
+    - link:             all unvisited links
+    - not(selector):	every element that is not a <selector> element
+    - optional:	        <input> elements with no "required" attribute
+    - read-only:	    <input> elements with a "readonly" attribute specified
+    - required:	        <input> elements with a "required" attribute specified
+    - valid:	        all <input> elements with a valid value
+    - visited:	        all visited links
+*/
+/* 
+Pseudo-elements: (specified parts of an element) (::)
+    - after:	        Insert something after the content of each <selector> element
+    - before:	        Insert something before the content of each <selector> element
+    - first-letter:	    the first letter of each <selector> element
+    - first-line:	    the first line of each <selector> element
+    - marker:	        the markers of list items
+    - selection:	    the portion of an element that is selected by a user 
+*/
+/* 
+Attribute Selectors: []
+    - [att]:	        all elements with a (att) attribute.
+    - [att=val]:	    all elements with att="val".
+    - [att~=val]:	    all elements with a title (att) containing the word "val" (arounded with spaces).
+    - [att*=val]:	    all elements with a title (att) containing substring "val".
+    - [att|=val]:	    all elements with a (att) attribute value starting with "val" alone or (-) (whole word like lang="en", or followed by a hyphen( - )).
+    - [att^=val]:	    all elements with a (att) attribute value begins with "val".
+    - [att$=val]:	    all elements with a (att) attribute value end with "val".
+*/
