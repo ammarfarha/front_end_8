@@ -1,0 +1,11 @@
+{
+    "fname" : "Ammar",
+    "lname" : "Yaser",
+    "age" : 30,
+    "bdate" : {
+        "day" : 5,
+        "month" : 8,
+        "year" : 1996
+    },
+    "marks" : [90, 70, 80]
+}
