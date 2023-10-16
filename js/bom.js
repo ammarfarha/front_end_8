@@ -94,6 +94,3 @@
 
 // startTime();
 
-// cookie:
-// document.cookie = "username=Ammar";
-// document.cookie = "username=Ammar; expires=Thu, 18 Dec 2013 12:00:00 UTC";

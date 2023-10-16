@@ -59,3 +59,6 @@
 
 // console.log(my_div.classList);
 
+// cookie:
+// document.cookie = "username=Ammar; lang=ar";
+// document.cookie = "username=Ammar; expires=Thu, 18 Dec 2013 12:00:00 UTC";
