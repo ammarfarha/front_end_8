@@ -1,11 +1,51 @@
-{
-    "fname" : "Ammar",
-    "lname" : "Yaser",
-    "age" : 30,
-    "bdate" : {
-        "day" : 5,
-        "month" : 8,
-        "year" : 1996
+ {
+    "location": {
+        "name": "Damascus",
+        "region": "Dimashq",
+        "country": "Syria",
+        "lat": 33.5,
+        "lon": 36.3,
+        "tz_id": "Asia/Damascus",
+        "localtime_epoch": 1697896353,
+        "localtime": "2023-10-21 16:52"
     },
-    "marks" : [90, 70, 80]
+    "current": {
+        "last_updated_epoch": 1697895900,
+        "last_updated": "2023-10-21 16:45",
+        "temp_c": 29.0,
+        "temp_f": 84.2,
+        "is_day": 1,
+        "condition": {
+            "text": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "code": 1000
+        },
+        "wind_mph": 5.6,
+        "wind_kph": 9.0,
+        "wind_degree": 340,
+        "wind_dir": "NNW",
+        "pressure_mb": 1018.0,
+        "pressure_in": 30.06,
+        "precip_mm": 0.0,
+        "precip_in": 0.0,
+        "humidity": 25,
+        "cloud": 0,
+        "feelslike_c": 27.6,
+        "feelslike_f": 81.7,
+        "vis_km": 10.0,
+        "vis_miles": 6.0,
+        "uv": 7.0,
+        "gust_mph": 1.5,
+        "gust_kph": 2.5,
+        "air_quality": {
+            "co": 178.6,
+            "no2": 1.5,
+            "o3": 104.4,
+            "so2": 2.7,
+            "pm2_5": 12.9,
+            "pm10": 43.0,
+            "us-epa-index": 1,
+            "gb-defra-index": 2
+        }
+    }
 }
