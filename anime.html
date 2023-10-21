@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime JS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        .box{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 4px;
+            display: inline-block;
+        }
+        .purple{background-color: purple;}
+        .green{background-color: green;}
+        .black{background-color: black;}
+        .grey{background-color: grey;}
+
+        .letter {
+          display: inline-block;
+          opacity: 0;
+        }
+        div {
+          display: inline-block;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="box purple"></div>
+    <div class="box green"></div>
+    <div class="box black"></div>
+    <div class="box grey"></div>
+
+
+    <h1>
+      <span class="letter">A</span>
+      <span class="letter">M</span>
+      <span class="letter">M</span>
+      <span class="letter">A</span>
+      <span class="letter">R</span>
+      <div></div>
+      <span class="letter">F</span>
+      <span class="letter">A</span>
+      <span class="letter">R</span>
+      <span class="letter">H</span>
+      <span class="letter">A</span>
+      <div></div>
+      <span class="letter">G</span>
+      <span class="letter">O</span>
+      <span class="letter">O</span>
+      <span class="letter">D</span>
+      <span class="letter">!</span>
+      <div></div>
+      <span class="letter">B</span>
+      <span class="letter">Y</span>
+      <span class="letter">E</span>
+      </h1>
+      <!-- https://devsnap.me/anime-js-examples -->
+    <script>
+      anime({
+  targets: 'div.box',
+  translateX: function(el) {
+    return el.getAttribute('data-x');
+  },
+  translateY: function(el, i) {
+    return 50 + (-50 * i);
+  },
+  scale: function(el, i, l) {
+    return (l - i) + .25;
+  },
+  rotate: function() { return anime.random(-360, 360); },
+  borderRadius: function() { return ['50%', anime.random(10, 35) + '%']; },
+  duration: function() { return anime.random(1200, 1800); },
+  delay: function() { return anime.random(0, 400); },
+  direction: 'alternate',
+  loop: true
+});
+
+
+
+      anime({
+        targets: '.letter',
+        opacity: 1,
+        translateY: 50, 
+        rotate: {
+          value: 360,
+          duration: 2000,
+          easing: 'easeInExpo'
+        }, 
+        scale: anime.stagger([0.7, 1], {from: 'center'}), 
+        delay: anime.stagger(100, {start: 1000}), 
+        translateX: [-10, 30],
+        loop: true
+      });                
+
+
+  
+  
+  
+     
+
+
+    </script>
+
+</body>
+</html>
