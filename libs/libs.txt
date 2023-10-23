@@ -1,8 +1,8 @@
 //- leaflet
-- select2
+//- select2
 //- aos
 //- animejs
-- dropzonejs
-- WYSIWYG (tinymce)
+//- dropzonejs
+// - WYSIWYG (tinymce)
 // - datatables
-- chartjs
+// - chartjs
